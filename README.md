@@ -51,3 +51,11 @@ Statistiche anonime, senza cookie, con GoatCounter: https://salus.goatcounter.co
 
 © OpenStreetMap e chi contribuisce (licenza ODbL). Le informazioni sono inserite da volontari e possono
 essere incomplete o non aggiornate.
+
+## Dati dal computer di paolo (PBF Italia)
+
+Ogni giorno il computer di paolo aggiorna il PBF dell'Italia di Geofabrik, ne estrae gli stessi oggetti
+della query Overpass e li carica come `salus.json.gz` sulla release **dati-osm** di questo repository
+(script `osm_italia.py`, fuori dal repository), poi fa partire la pubblicazione.
+Lo script di aggiornamento usa per prima quella copia, se ha dati OSM di meno di 3 giorni;
+altrimenti chiede a Overpass come prima. Nell'indice dei dati, `datiOsm` / `dati_osm` dice di quando sono i dati della copia.
